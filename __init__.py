@@ -49,15 +49,6 @@ Builder.load_string("""
 """)
 
 
-async def asyncFun():
-    a = 0
-    for i in range(2):
-        await ak.sleep(1)
-        a = i
-        print(i)
-    return str(a)
-
-
 class ConnectionState(Enum):
     DONE = auto()
     WAITING = auto()
